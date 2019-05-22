@@ -3,25 +3,13 @@
   <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap-social/bootstrap-social.css"
-    />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Ristorante Con Fusion</title>
   </head>
@@ -29,12 +17,7 @@
   <body>
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
       <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#Navbar"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">
@@ -43,9 +26,7 @@
         <div class="collapse navbar-collapse" id="Navbar">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">
-                <span class="fa fa-home fa-lg"></span> Home
-              </a>
+              <a class="nav-link" href="#"> <span class="fa fa-home fa-lg"></span> Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/aboutus.html"
@@ -63,25 +44,85 @@
               </a>
             </li>
           </ul>
+          <span class="navbar-text">
+            <a data-toggle="modal" data-target="#loginModal">
+              <span class="fa fa-sign-in"></span>Login
+            </a>
+          </span>
         </div>
       </div>
     </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-sm-4">
+                  <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control form-control-sm mr-1"
+                    id="exampleInputEmail3"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-group col-sm-4">
+                  <label class="sr-only" for="exampleInputPassword3">Password</label>
+                  <input
+                    type="password"
+                    class="form-control form-control-sm mr-1"
+                    id="exampleInputPassword3"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="col-sm-auto">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label"> Remember me </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">
+                  Cancel
+                </button>
+                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
           <div class="col-12 col-sm-6">
             <h1>Ristorante con Fusion</h1>
             <p>
-              We take inspiration from the World's best cuisines, and create a
-              unique fusion experience. Our lipsmacking creations will tickle
-              your culinary senses!
+              We take inspiration from the World's best cuisines, and create a unique fusion
+              experience. Our lipsmacking creations will tickle your culinary senses!
             </p>
           </div>
           <div class="col-12 col-sm align-self-center">
             <img src="img/logo.png" class="img-fluid" />
           </div>
           <div class="col-12 col-sm align-self-center">
-            <a href="#reservation" class="btn btn-small btn-warning">
+            <a
+              role="button"
+              href="#reservation"
+              class="btn btn-block nav-link btn-warning"
+              data-toggle="tooltip"
+              data-html="true"
+              title="Or Call us at <br><strong>+852 12345678</strong>"
+              data-placement="bottom"
+            >
               Reserve Table
             </a>
           </div>
@@ -108,9 +149,9 @@
                 <span class="badge badge-pill badge-secondary">$4.99</span>
               </h2>
               <p class="d-none d-sm-block">
-                A unique combination of Indian Uthappam (pancake) and Italian
-                pizza, topped with Cerignola olives, ripe vine cherry tomatoes,
-                Vidalia onion, Guntur chillies and Buffalo Paneer.
+                A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with
+                Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and
+                Buffalo Paneer.
               </p>
             </div>
           </div>
@@ -124,21 +165,14 @@
         <div class="col col-sm col-md">
           <div class="media">
             <div class="media-body">
-              <h2 class="mt-0">
-                Weekend Grand Buffet <span class="badge badge-danger">NEW</span>
-              </h2>
+              <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
               <p class="d-none d-sm-block">
-                Featuring mouthwatering combinations with a choice of five
-                different salads, six enticing appetizers, six main entrees and
-                five choicest desserts. Free flowing bubbly and soft drinks. All
-                for just $19.99 per person
+                Featuring mouthwatering combinations with a choice of five different salads, six
+                enticing appetizers, six main entrees and five choicest desserts. Free flowing
+                bubbly and soft drinks. All for just $19.99 per person
               </p>
             </div>
-            <img
-              class="ml-3 align-self-center img-thumbnail"
-              src="img/buffet.png"
-              alt="buffet"
-            />
+            <img class="ml-3 align-self-center img-thumbnail" src="img/buffet.png" alt="buffet" />
           </div>
         </div>
       </div>
@@ -158,10 +192,9 @@
               <h2 class="mt-0">Alberto Somayya</h2>
               <h4>Executive Chef</h4>
               <p class="d-none d-sm-block">
-                Award winning three-star Michelin chef with wide International
-                experience having worked closely with whos-who in the culinary
-                world, he specializes in creating mouthwatering Indo-Italian
-                fusion experiences.
+                Award winning three-star Michelin chef with wide International experience having
+                worked closely with whos-who in the culinary world, he specializes in creating
+                mouthwatering Indo-Italian fusion experiences.
               </p>
             </div>
           </div>
@@ -179,9 +212,7 @@
                     Number of Guests
                   </label>
                   <div class="col-md">
-                    <div
-                      class="custom-control custom-radio custom-control-inline"
-                    >
+                    <div class="custom-control custom-radio custom-control-inline">
                       <input
                         class="custom-control-input"
                         type="radio"
@@ -191,9 +222,7 @@
                       />
                       <label class="custom-control-label" for="1guest">1</label>
                     </div>
-                    <div
-                      class="custom-control custom-radio custom-control-inline"
-                    >
+                    <div class="custom-control custom-radio custom-control-inline">
                       <input
                         class="custom-control-input"
                         type="radio"
@@ -201,13 +230,9 @@
                         id="2guests"
                         value="2"
                       />
-                      <label class="custom-control-label" for="2guests"
-                        >2</label
-                      >
+                      <label class="custom-control-label" for="2guests">2</label>
                     </div>
-                    <div
-                      class="custom-control custom-radio custom-control-inline"
-                    >
+                    <div class="custom-control custom-radio custom-control-inline">
                       <input
                         class="custom-control-input"
                         type="radio"
@@ -215,13 +240,9 @@
                         id="3guests"
                         value="3"
                       />
-                      <label class="custom-control-label" for="3guests"
-                        >3</label
-                      >
+                      <label class="custom-control-label" for="3guests">3</label>
                     </div>
-                    <div
-                      class="custom-control custom-radio custom-control-inline"
-                    >
+                    <div class="custom-control custom-radio custom-control-inline">
                       <input
                         class="custom-control-input"
                         type="radio"
@@ -229,13 +250,9 @@
                         id="4guests"
                         value="4"
                       />
-                      <label class="custom-control-label" for="4guests"
-                        >4</label
-                      >
+                      <label class="custom-control-label" for="4guests">4</label>
                     </div>
-                    <div
-                      class="custom-control custom-radio custom-control-inline"
-                    >
+                    <div class="custom-control custom-radio custom-control-inline">
                       <input
                         class="custom-control-input"
                         type="radio"
@@ -243,13 +260,9 @@
                         id="5guests"
                         value="5"
                       />
-                      <label class="custom-control-label" for="5guests"
-                        >5</label
-                      >
+                      <label class="custom-control-label" for="5guests">5</label>
                     </div>
-                    <div
-                      class="custom-control custom-radio custom-control-inline"
-                    >
+                    <div class="custom-control custom-radio custom-control-inline">
                       <input
                         class="custom-control-input"
                         type="radio"
@@ -257,17 +270,12 @@
                         id="6guests"
                         value="6"
                       />
-                      <label class="custom-control-label" for="6guests"
-                        >6</label
-                      >
+                      <label class="custom-control-label" for="6guests">6</label>
                     </div>
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label
-                    for="number-of-guests"
-                    class="col-form-label col-md-2 col-12"
-                  >
+                  <label for="number-of-guests" class="col-form-label col-md-2 col-12">
                     Date and Time
                   </label>
                   <div class="col-md-5 col-12">
@@ -329,9 +337,7 @@
           </div>
           <div class="col-12 col-sm-4 align-self-center">
             <div class="text-center">
-              <a
-                class="btn btn-social-icon btn-google"
-                href="http://google.com/+"
+              <a class="btn btn-social-icon btn-google" href="http://google.com/+"
                 ><i class="fa fa-google-plus fa-lg"></i>
               </a>
               <a
@@ -340,22 +346,13 @@
               >
                 <i class="fa fa-facebook fa-lg"></i>
               </a>
-              <a
-                class="btn btn-social-icon btn-linkedin"
-                href="http://www.linkedin.com/in/"
-              >
+              <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/">
                 <i class="fa fa-linkedin fa-lg"></i>
               </a>
-              <a
-                class="btn btn-social-icon btn-twitter"
-                href="http://twitter.com/"
-              >
+              <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/">
                 <i class="fa fa-twitter fa-lg"></i>
               </a>
-              <a
-                class="btn btn-social-icon btn-google"
-                href="http://youtube.com/"
-              >
+              <a class="btn btn-social-icon btn-google" href="http://youtube.com/">
                 <i class="fa fa-youtube fa-lg"></i>
               </a>
               <a class="btn btn-social-icon" href="mailto:">
@@ -376,5 +373,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
