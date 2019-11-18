@@ -1,5 +1,10 @@
-$(document).ready(_ => {
-  $("#carouselButton").click(function() {
+import $ from 'jquery';
+import * as popper from 'popper.js';
+import * as bootstrap from 'bootstrap';
+require("../css/styles.css");
+$(document).ready(function whenDocumentIsReady () {
+  console.log('Everything is working');
+  $("#carouselButton").click(function playOrPauseCarousel() {
     if (
       $("#carouselButton")
         .children("span")
@@ -28,12 +33,12 @@ $(document).ready(_ => {
   });
 
   // Login modal
-  $("#loginLink").click(function() {
+  $("#loginLink").click(function openLoginModal() {
     $("#loginModal").modal();
   });
 
   // Reserve Table Modal
-  $('#reservationButton').click(function() {
+  $('#reservationButton').click(function openReservationTableModal() {
     $('#reservationModal').modal();
   })
 });
